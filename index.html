@@ -1,1 +1,88 @@
-//this is a test on github
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Student survey</title>
+    </head>
+    <body>
+        <!--Part1 / create the form-->
+        <form action="/student-survey.url()" method="post">
+            <fieldset>
+                <legend>Add user</legend>
+
+                <!--Part2 / basic information-->
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName">
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName">
+
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email_address" id="email">
+                </div>
+
+                <!--Part3 / Drop Down Menu-->
+                <div>
+                    <label for="status">Status</label>
+                    <select name="status" id="status">
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="guest">Guest</option>
+                    </select>
+                </div>
+                
+                <!--Part4 / Radio Buttons-->
+
+                <p>Choose your favorite programming language: </p>
+                
+                <div>
+                    <input type="radio" id="html" name="favorite" value="HTML">
+                    <label for="html">HTML</label>
+                </div>    
+            
+                <div>
+                    <input type="radio" id="css" name="favorite" value="CSS">
+                    <label for="css">CSS</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="javascript" name="favorite" value="JavaScript">
+                    <label for="javascript">JavaScript</label>
+                </div>
+                
+                <!--Part5 add some info-->
+                <div>
+                    <label for="comment">Comments</label>
+                    <textarea name="comment" id="comment"></textarea>
+                    <div>
+                        <label for="date">Current Date</label>
+                        <input type="date" name="date" id="date">
+                
+                    </div>
+                </div>
+
+                <!--Part6 / Submission-->
+                <div>
+                    <input type="checkbox" name="box" id="news">
+                    <label for="news">Sign up for newsletter</label>
+                    
+                </div>
+                <div>
+                    <input type="checkbox" name="box" id="terms">
+                    <label for="terms">Agree to terms and conditions</label>
+                </div>
+
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+
+            </fieldset>
+        </form>
+    </body>
+</html>
